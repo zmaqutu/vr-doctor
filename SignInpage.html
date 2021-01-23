@@ -54,9 +54,7 @@
 </div>
 
 <div class="container">
-    <div class="col-md-12 text-center">
-     
-        </div>
+    
     <div class="reg">
         <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
         <input type="text" class="form-control" id="c_fname" required="required" runat="server" name="c_fname">
@@ -75,16 +73,18 @@
          
         <p>  </p>
 
-            <asp:DropDownList ID="DropDownList1" class="form-control" AutoPostBack="false" runat="server">
+            <!--asp:DropDownList ID="DropDownList1" class="form-control" AutoPostBack="false" runat="server">
                 <asp:ListItem>user</asp:ListItem>
                 <asp:ListItem>admin</asp:ListItem>
                 <asp:ListItem>manager</asp:ListItem>
             </asp:DropDownList>
-
+<!-->
         <p>
 
         </p>
-            <asp:Button ID="Register" runat="server" class="btn btn-sm btn-primary" Text="Register" OnClick="Register_Click" />
+        <button type="button" onclick="document.location = 'Infopage.html'" class="btn btn-primary">
+            Register
+        </button>
             
         <div class="col-md-12">
         Have an account? <a href="LoginPage.html">Click here</a> to log in          
@@ -100,9 +100,9 @@
 
 
 <footer class="footer container-fluid text-center py-3 shadow">
-    <a href="#">Home</a> |
-    <a href="#"> Contact Us</a> |
-    <a href="#"> About Us</a> </br>
+    <a href="Index.html">Home</a> |
+    <a href="ContactUsPage.html"> Contact Us</a> |
+    <a href="Aboutus.html"> About Us</a> </br>
     <div class="footer-copyright text-center py-3">
         &copy CompanyName by Group 2021
     </div>

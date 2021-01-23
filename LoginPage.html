@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active" ><a class="nav-link" href="Index.html">Home</a></li>
-                <li class="nav-item menu" ><a class="nav-link" href="#">Get Started</a></li>
+                <li class="nav-item menu" ><a class="nav-link" href="SignInpage.html">Get Started</a></li>
                 <li class="nav-item menu" ><a class="nav-link" href="Aboutus.html">About Us</a></li>
                 <li class="nav-item menu" ><a class="nav-link" href="ContactUsPage.html">Contact Us</a></li>
                 <li class="nav-item logged-out" >
@@ -67,7 +67,10 @@
           <p></p>
         <p> <input type="password" class="form-control" id="password" required="required" name="c_fname" placeholder = "Password" runat="server"></p>
         <p></p>
-            <asp:Button ID="Login" class="btn btn-sm btn-primary" runat="server" Text="Login" OnClick="Login_Click" />
+        <button type="button" onclick="document.location = 'Infopage.html'" class="btn btn-primary">
+            Login 
+        </button>
+           
          
         <div class="col-md-12">
           Don't have an account? <a href="SignInpage.html">Click here</a> to sign up          
@@ -79,9 +82,9 @@
 
 
 <footer class="footer container-fluid text-center py-3 shadow">
-    <a href="#">Home</a> |
-    <a href="#"> Contact Us</a> |
-    <a href="#"> About Us</a> </br>
+    <a href="Index.html">Home</a> |
+    <a href="ContactUsPage.html"> Contact Us</a> |
+    <a href="Aboutus.html"> About Us</a> </br>
     <div class="footer-copyright text-center py-3">
         &copy CompanyName by Group 2021
     </div>
