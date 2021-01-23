@@ -6,9 +6,15 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
+    "drei": "^2.2.19",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
+    "react-three-fiber": "^5.3.14",
+    "react-xr": "^1.1.0",
+    "sass": "^1.32.5",
+    "three": "^0.124.0",
+    "three-js": "^79.0.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
