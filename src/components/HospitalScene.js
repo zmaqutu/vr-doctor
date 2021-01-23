@@ -8,7 +8,7 @@ function HospitalScene() {
     let width = window.innerWidth;
     let height = window.innerHeigh; 
 
-    const cameraPosition = useRef([0,1,0]);
+    const cameraPosition = useRef([0,0.5,0]);
     return (
         <>
             <VRCanvas
@@ -18,7 +18,7 @@ function HospitalScene() {
                     position: cameraPosition.current,
                     fov: 52.5,
                     aspect: width / height, 
-                    far: 5000
+                    far: 5000,
                     }
                 }
             >
