@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Stylesheet.css">
+    <title>VR Doctor</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light shadow">
+
+        <a class="navbar-brand" href="index.html"><img src="Images/vrdoctor.jpg" alt="Logo"
+                style="width: 10%;" style ="height:20%;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active" ><a class="nav-link" href="Index.html">Home</a></li>
+                <li class="nav-item menu" ><a class="nav-link" href="SignInpage.html">Get Started</a></li>
+                <li class="nav-item menu" ><a class="nav-link" href="Aboutus.html">About Us</a></li>
+                <li class="nav-item menu" ><a class="nav-link" href="ContactUsPage.html">Contact Us</a></li>
+                <li class="nav-item logged-out" >
+                    <a href="LoginPage.html" class="nav-link  modal-trigger" data-toggle="modal" data-target="#modalLoginForm"
+                        style="font-family:Arial, Helvetica, sans-serif;">Login</a>
+                </li>
+                <li class="nav-item logged-in" style="display: none;">
+                    <a href="#" onclick="runAcc()" class="nav-link" id="account">Account</a>
+                </li>
+                <li class="nav-item logged-in" style="display: none;">
+                    <a href="#" class="nav-link" id="logout">Logout</a>
+                </li>
+                <li class="nav-item logged-out">
+                    <a href="SignInpage.html" class="nav-link modal-trigger" data-toggle="modal" data-target="#modalRegisterForm"
+                        style="font-family:Arial, Helvetica, sans-serif;">Sign up</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</br>
+
+<div class="Container-fluid text-center">
+    <h1> Contact Us</h1>
+
+</div>
+
+<!-- Contact section -->
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 contact-info">
+                <h3>Get in touch</h3>
+                <p>Maseru, Lesotho</p>
+                <p>+266 5912 3456</p>
+                <p>vrdocs@gmail.com</p>
+                <div class="contact-social">
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-behance"></i></a>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your name">
+                    <input type="text" placeholder="Your e-mail">
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Message"></textarea>
+                    <button class="site-btn">SEND NOW</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14376.077865872314!2d-73.879277264103!3d40.757667781624285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1546528920522" style="border:0" allowfullscreen></iframe></div>
+</section>
+<!-- Contact section end -->
+
+<footer class="footer container-fluid text-center py-3 shadow">
+    <a href="Index.html">Home</a> |
+    <a href="ContactUsPage.html"> Contact Us</a> |
+    <a href="Aboutus.html"> About Us</a> </br>
+    <div class="footer-copyright text-center py-3">
+        &copy CompanyName by Group 2021
+    </div>
+</footer>
+
+
+<script src="https://kit.fontawesome.com/fc651378fe.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>

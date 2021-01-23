@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Stylesheet.css">
+    <title>VR Doctor</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light shadow">
+
+        <a class="navbar-brand" href="index.html"><img src="Images/vrdoctor.jpg" alt="Logo"
+                style="width: 10%;" style ="height:20%;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active" ><a class="nav-link" href="Index.html">Home</a></li>
+                <li class="nav-item menu" ><a class="nav-link" href="SignInpage.html">Get Started</a></li>
+                <li class="nav-item menu" ><a class="nav-link" href="Aboutus.html">About Us</a></li>
+                <li class="nav-item menu" ><a class="nav-link" href="ContactUsPage.html">Contact Us</a></li>
+                <li class="nav-item logged-out" >
+                    <a href="LoginPage.html" class="nav-link  modal-trigger" data-toggle="modal" data-target="#modalLoginForm"
+                        style="font-family:Arial, Helvetica, sans-serif;">Login</a>
+                </li>
+                <li class="nav-item logged-in" style="display: none;">
+                    <a href="LoginPage.html" onclick="runAcc()" class="nav-link" id="account">Account</a>
+                </li>
+                <li class="nav-item logged-in" style="display: none;">
+                    <a href="Index.html" class="nav-link" id="logout">Logout</a>
+                </li>
+                <li class="nav-item logged-out">
+                    <a href="SignInpage.html" class="nav-link modal-trigger" data-toggle="modal" data-target="#modalRegisterForm"
+                        style="font-family:Arial, Helvetica, sans-serif;">Sign up</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</br>
+<div class="Container-fluid text-center">
+    <h1> Welcome to VR Doctor</h1>
+
+</div>
+</br>
+</br>
+<div class="container-fluid">
+    <div class="row">
+
+        <Section class="col-sm-6">
+            <!-- <div class="row"> -->
+            <div class="text-center pic">
+                <img src="Images/ConsultationForDoctor.jpg" alt="Mascot" class="img-thumbnail" class="wiz">
+            </div>
+            <!-- </div> -->
+        </Section>
+
+        <aside class="col-sm-6">
+            <!-- <div class="row"> -->
+            <div class="get_started">
+                <H2 style="text-align: center;">Why VR?</H2>
+                </br>
+
+                <table>
+                    <tr>
+                        <td><i class="fas fa-magic" style="font-size:30px;color:#2196F3"></i></td>
+                        <td>Virtual doctors office</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="far fa-thumbs-up" style="font-size:30px;color:#2196F3"></i></td>
+                        <td>Best medical advice</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="far fa-clock" style="font-size:30px;color:#2196F3"></i></td>
+                        <td>Shorter waiting Times</td>
+                    </tr>
+                </table>
+
+                </br>
+            </div>
+            <div class="text-center">
+                <button type="button" onclick="document.location = 'SignInpage.html'" class="btn btn-primary">
+                    Get started!
+                </button>
+            </div>
+            <!-- </div> -->
+        </aside>
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+
+<div class="container marketing">
+
+    <div class="Heading text-center">
+        <H2>VR Doctor Features</H2>
+    </div>
+    </br>
+    </br>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="Images/MobileDoctor.jpg" alt="wand" width="330" height="170">
+            </br>
+            <h2>Mobile Doctor</h2>
+            <p>See a Doctor on the Move</p>
+
+        </div>
+        <div class="col-lg-4">
+            <img src="Images/OnlineDoctor.jpeg" alt="Business_Man" width="330" height="170">
+            </br>
+            <h2>Accesible Doctor</h2>
+            <p>Access your Doctor from any browser on any Device</p>
+
+        </div>
+        <div class="col-lg-4">
+            <img src="Images/ConsultationDoctor.jpg" alt="The wizard" width="330" height="170">
+            </br>
+            <h2>Chat with virtual doctor</h2>
+            <p> Meet our advanced Virtual Doctor</p>
+
+        </div>
+    </div>
+
+</div>
+<footer class="footer container-fluid text-center py-3 shadow">
+    <a href="Index.html">Home</a> |
+    <a href="ContactUsPage.html"> Contact Us</a> |
+    <a href="Aboutus.html"> About Us</a> </br>
+    <div class="footer-copyright text-center py-3">
+        &copy CompanyName by Group 2021
+    </div>
+</footer>
+
+
+<script src="https://kit.fontawesome.com/fc651378fe.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+</html>
