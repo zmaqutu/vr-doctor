@@ -3,7 +3,7 @@ import { OrbitControls, useGLTF } from 'drei';
 
 
 function Model() {
-    const gltf = useGLTF("/scene.gltf", true);
+    const gltf = useGLTF("/assets/scene.gltf", true);
     return (
         <primitive object ={gltf.scene} dispose = {null} />
     )
