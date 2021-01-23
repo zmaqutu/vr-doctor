@@ -1,0 +1,41 @@
+[33mcommit 1b363b0a9ac2bb9b78153b741e1b22c9b15966fb[m[33m ([m[1;36mHEAD -> [m[1;32mVRDOCTOR[m[33m, [m[1;31morigin/VRDOCTOR[m[33m)[m
+Author: Haram7be <stshiani89@gmail.com>
+Date:   Sat Jan 23 17:37:01 2021 +0200
+
+    landing page merge
+
+[33mcommit 7ed743f6d73ab6cfc69c7bfdf1e3c3106013c97f[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Zongo Maqutu <MQTZON001@myuct.ac.za>
+Date:   Sat Jan 23 17:05:18 2021 +0200
+
+    Deployment test 3
+
+[33mcommit 15ea9d20d95c6fc9e273b2f61d3c9274a80fed19[m
+Author: Zongo Maqutu <MQTZON001@myuct.ac.za>
+Date:   Sat Jan 23 16:36:17 2021 +0200
+
+    Deployment test 2
+
+[33mcommit 2de8985aef5159d3dc1ec5c8b5693323c767d661[m
+Author: Zongo Maqutu <MQTZON001@myuct.ac.za>
+Date:   Sat Jan 23 16:09:16 2021 +0200
+
+    Deployment test
+
+[33mcommit d25145142b9572b23450fd4c153754fd6b690426[m
+Author: Zongo Maqutu <MQTZON001@myuct.ac.za>
+Date:   Sat Jan 23 11:35:59 2021 +0200
+
+    Added gltf model to my the scene, fix VR camera
+
+[33mcommit a92d4df304ec873bff2c172040d794d74795a039[m
+Author: Zongo Maqutu <MQTZON001@myuct.ac.za>
+Date:   Sat Jan 23 09:53:49 2021 +0200
+
+    First Commit: Cleaned initial react page
+
+[33mcommit 55f57a9860e5afae1f208876a69e03aa033f0e30[m
+Author: Zongo Maqutu <MQTZON001@myuct.ac.za>
+Date:   Sat Jan 23 09:32:15 2021 +0200
+
+    Initialize project using Create React App
