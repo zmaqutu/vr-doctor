@@ -57,37 +57,42 @@
 
         <div class="container">
 
-            <div class="reg">
-                <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="c_fname" required="required" runat="server" name="c_fname">
-                <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" required="required" runat="server" id="c_lname" name="c_lname">
+            <form class="reg" id="SignUp-Form">
+                <div class="form-group">
+                    <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="c_fname" required="required" runat="server"
+                        name="c_fname">
+                </div>
+                <div class="form-group">
+                    <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" required="required" id="c_lname" name="c_lname">
+                </div>
+                <div class="form-group">
+                    <label for="c_email" class="text-black">Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" required id="c_email" name="c_email" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="c_number" class="text-black">Phone Number </label>
+                    <input type="text" class="form-control" required id="c_number" name="c_number">
+                </div>
+                <div class="form-group">
+                    <label for="DOB" class="text-black">Date of Birth</label>
+                    <input type="date" class="form-control" required id="DOB" name="DOB">
+                </div>
+                <div class="form-group">
+                    <label for="c_pass" class="text-black">Password <span class="text-danger">*</span> </label>
+                    <input type="text" class="form-control" required id="c_pass" name="c_pass">
+                </div>
+                <div class="form-group">
+                    <label for="c_confpass" class="text-black">Confirm Password <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" class="form-control" required id="c_confpass" name="c_confpass">
+                </div>
 
-                <label for="c_email" class="text-black">Email <span class="text-danger">*</span></label>
-                <input type="email" class="form-control" required="required" runat="server" id="c_email" name="c_email"
-                    placeholder="">
-                <label for="c_number" class="text-black">Phone Number </label>
-                <input type="text" class="form-control" required="required" runat="server" id="c_number"
-                    name="c_number">
-                <label for="c_pass" class="text-black">Password <span class="text-danger">*</span> </label>
-                <input type="text" class="form-control" required="required" runat="server" id="c_pass" name="c_pass">
-                <label for="c_confpass" class="text-black">Confirm Password <span class="text-danger">*</span> </label>
-                <input type="text" class="form-control" required="required" runat="server" id="c_confpass"
-                    name="c_confpass">
-
-
-                <p> </p>
-
-                <!--asp:DropDownList ID="DropDownList1" class="form-control" AutoPostBack="false" runat="server">
-                <asp:ListItem>user</asp:ListItem>
-                <asp:ListItem>admin</asp:ListItem>
-                <asp:ListItem>manager</asp:ListItem>
-            </asp:DropDownList>
-<!-->
-                <p>
-
-                </p>
-                <button type="button" onclick="document.location = 'Infopage.html'" class="btn btn-primary">
+                <p></p>
+                <p id="errMsg" class="text-danger"> </p>
+                <br>
+                <button type="submit" class="btn btn-primary">
                     Register
                 </button>
 
@@ -95,7 +100,7 @@
                     Have an account? <a href="LoginPage.html">Click here</a> to log in
                 </div>
 
-            </div>
+            </form>
 
 
 
@@ -109,7 +114,7 @@
             <a href="ContactUsPage.html"> Contact Us</a> |
             <a href="Aboutus.html"> About Us</a> </br>
             <div class="footer-copyright text-center py-3">
-                &copy CompanyName by Group 2021
+                &copy VRDoctor by Group #3 C3 2021
             </div>
         </footer>
 
@@ -124,12 +129,14 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
+        <!-- firebase -->
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
-
         <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
         <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
 
         <script>
             // Your web app's Firebase configuration
@@ -146,5 +153,10 @@
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
             firebase.analytics();
+            const auth = firebase.auth();
+            const db = firebase.firestore();
+            // update firestore settings
+            db.settings({ timestampsInSnapshots: true });
         </script>
+        <script src="auth.js"></script>
     </body>
