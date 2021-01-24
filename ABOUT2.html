@@ -25,12 +25,23 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active" ><a class="nav-link" href="Index.html">Home</a></li>
-                
+                <li class="nav-item menu" ><a class="nav-link" href="SignInpage.html">Get Started</a></li>
                 <li class="nav-item menu" ><a class="nav-link" href="Aboutus.html">About Us</a></li>
                 <li class="nav-item menu" ><a class="nav-link" href="ContactUsPage.html">Contact Us</a></li>
-                <li class="nav-item menu" ><a class="nav-link" href="LoginPage.html" style="font-family:Arial, Helvetica, sans-serif;">Login</a></li>
-                <li class="nav-item menu" ><a class="nav-link" href="SignInpage.html" style="font-family:Arial, Helvetica, sans-serif;">Sign Up</a></li>
-                
+                <li class="nav-item logged-out" >
+                    <a href="LoginPage.html" class="nav-link  modal-trigger" data-toggle="modal" data-target="#modalLoginForm"
+                        style="font-family:Arial, Helvetica, sans-serif;">Login</a>
+                </li>
+                <li class="nav-item logged-in" style="display: none;">
+                    <a href="#" onclick="runAcc()" class="nav-link" id="account">Account</a>
+                </li>
+                <li class="nav-item logged-in" style="display: none;">
+                    <a href="#" class="nav-link" id="logout">Logout</a>
+                </li>
+                <li class="nav-item logged-out">
+                    <a href="SignInpage.html" class="nav-link modal-trigger" data-toggle="modal" data-target="#modalRegisterForm"
+                        style="font-family:Arial, Helvetica, sans-serif;">Sign up</a>
+                </li>
             </ul>
 
         </div>
@@ -73,9 +84,12 @@
                 <input type="text" class="form-control" id="validationDefault02" placeholder="Last name"  required>
               </div>
               <div class="col-md-4 mb-3">
-                <label for="validationDefaultUsername">Email Address</label>
-                
-                  <input type="text" class="form-control" id="validationDefault03" placeholder="Email" aria-describedby="inputGroupPrepend2" required>
+                <label for="validationDefaultUsername">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
                 </div>
               </div>
             </div>
@@ -85,8 +99,8 @@
                 <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
               </div>
               <div class="col-md-3 mb-3">
-                <label for="validationDefault04">Country</label>
-                <input type="text" class="form-control" id="validationDefault04" placeholder="Country" required>
+                <label for="validationDefault04">State</label>
+                <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
               </div>
               <div class="col-md-3 mb-3">
                 <label for="validationDefault05">Zip</label>
