@@ -28,16 +28,26 @@ signupForm.addEventListener('submit', (e) => {
             auth.createUserWithEmailAndPassword(email, password).then(cred => {
                 //create patient details
                 db.collection("Patient").doc(cred.user.uid).set({
-                    FirstName : GetVal("c_fname"),
-                    LastName : GetVal("c_lname"),
-                    Email : email,
-                    DOB : GetVal("DOB"),
-                    Phone : GetVal("c_number"),
-                    FirstName : GetVal("c_fname"),
-                    FirstName : GetVal("c_fname")
+                    FirstName: GetVal("c_fname"),
+                    LastName: GetVal("c_lname"),
+                    Email: email,
+                    DOB: GetVal("DOB"),
+                    Phone: GetVal("c_number"),
+                    FirstName: GetVal("c_fname"),
+                    FirstName: GetVal("c_fname"),
+                    Plan : "Once of payment"
 
                 }).then(() => {
-                    window.location ='Infopage.html';
+                    db.collection("Patient").doc(cred.user.uid).collection("prescription").doc("p1").set({
+                        //hard code as this information will be updated by the doctor
+                        Date: "24 January 2021",
+                        Doctor: "Dr Zuma",
+                        Recipie: "Paracetamol 500mg",
+                        PillsPerDay: 3,
+                        NumberOfPills: 2,
+                        Description: "Don't exceed more than 10 days"
+                    })
+                    window.location = 'Infopage.html';
                 })
             });
         } else {
@@ -47,3 +57,4 @@ signupForm.addEventListener('submit', (e) => {
 })/* .catch(err => {
     signupForm.querySelector('#errMsg').innerHTML = err.message;
 }); */
+//log in
